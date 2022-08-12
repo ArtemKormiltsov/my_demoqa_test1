@@ -12,7 +12,7 @@ public class StudentsRegistrationForm {
     RegistrationFormData registrationFormData = new RegistrationFormData();
 
     @BeforeAll
-    static void config(){
+    static void config() {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
         Configuration.holdBrowserOpen = true;

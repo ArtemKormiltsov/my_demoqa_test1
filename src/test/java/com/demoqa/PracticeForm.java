@@ -3,6 +3,7 @@ package com.demoqa;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
@@ -12,14 +13,14 @@ import static com.codeborne.selenide.Selenide.open;
 public class PracticeForm {
 
     @BeforeAll
-    static void configure(){
+    static void configure() {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
         Configuration.holdBrowserOpen = true;
     }
 
     @Test
-    void fillPracticeForm(){
+    void fillPracticeForm() {
         open("/automation-practice-form");
         $("#firstName").setValue("Mark");
         $("#lastName").setValue("Walker");
@@ -49,8 +50,8 @@ public class PracticeForm {
                 text("15 April,1990"),
                 text("Male"),
                 text("8905555323"),
-                text ("Economics"),
-                text ("Sport"),
+                text("Economics"),
+                text("Sports"),
                 text("Back Street"),
                 text("Uttar Pradesh Agra"));
         $("#closeLargeModal").click();

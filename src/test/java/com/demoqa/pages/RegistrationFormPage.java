@@ -11,7 +11,6 @@ import static com.codeborne.selenide.Selenide.*;
 import static java.lang.String.format;
 
 public class RegistrationFormPage {
-
     SelenideElement firstNameInput = $("#firstName");
     SelenideElement lastNameInput = $("#lastName");
     SelenideElement emailInput = $("#userEmail");

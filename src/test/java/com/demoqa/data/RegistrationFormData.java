@@ -2,7 +2,6 @@ package com.demoqa.data;
 
 
 public class RegistrationFormData {
-
     public String firstName = "Mark";
     public String lastName = "Walker";
     public String email = "markwalk@gmail.com";
